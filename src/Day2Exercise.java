@@ -1,21 +1,25 @@
 public class Day2Exercise {
     public static void main(String[] args) {
-        int TestcaseID = 101;
-        String TestCaseName =  "Login with valid account";
-        String Username =  "duongtest";
-        int Password = 123456;
-        int Expected_StatusCode = 200;
-        int Actual_Status_Code = 200;
-        boolean result = Expected_StatusCode == Actual_Status_Code;
+        int testCaseID = 101;
+        String testCaseName =  "Login with valid account";
+        String username =  "duongtest";
+        String password = "123456";
+        int expectedStatusCode = 200;
+        int actualStatusCode = 200;
+        boolean result = expectedStatusCode == actualStatusCode;
 
         System.out.println("==== TEST CASE ====");
-        System.out.println("Test case ID:" + TestcaseID);
-        System.out.println("Test case name: " + TestCaseName);
-        System.out.println("Username: " + Username);
-        System.out.println("Password: " + Password);
-        System.out.println("Expected Status Code: " + Expected_StatusCode);
-        System.out.println("Actual Status Code: " + Actual_Status_Code);
+        System.out.println("Test case ID:" + testCaseID);
+        System.out.println("Test case name: " + testCaseName);
+        System.out.println("Username: " + username);
+        System.out.println("Password: " + password);
+        System.out.println("Expected Status Code: " + expectedStatusCode);
+        System.out.println("Actual Status Code: " + actualStatusCode);
         System.out.println("Result: " + result);
-
+        if (result) {
+            System.out.println("Test Status: PASS");
+        }
+            else { System.out.println("Test Status: FAIL");
+        }
     }
 }
