@@ -1,11 +1,11 @@
 public class Day2Exercise {
     public static void main(String[] args) {
-        int testCaseID = 101;
-        String testCaseName =  "Login with valid account";
+        int testCaseID = 102;
+        String testCaseName =  "Login with invalid account";
         String username =  "duongtest";
-        String password = "123456";
-        int expectedStatusCode = 200;
-        int actualStatusCode = 200;
+        String password = "111111";
+        int expectedStatusCode = 401;
+        int actualStatusCode = 401;
         boolean result = expectedStatusCode == actualStatusCode;
 
         System.out.println("==== TEST CASE ====");
